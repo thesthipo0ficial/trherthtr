@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generando...</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			font-family: 'Press Start 2P', cursive;
+			background-color: #000;
+			background: url('https://www.thisiscolossal.com/wp-content/uploads/2018/12/agifcolossaltd2opt.gif') no-repeat center center fixed;
+			background-size: cover;
+			overflow: hidden;
+		}
+
+		.generando {
+			color: #fff;
+			font-size: 48px;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		.loading {
+			display: inline-block;
+			position: relative;
+			width: 64px;
+			height: 18px;
+			margin-top: 15px;
+		}
+
+		.loading span {
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background-color: #fff;
+			animation: loading 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+		}
+
+		.loading span:nth-child(2) {
+			left: 25px;
+			animation-delay: -0.4s;
+		}
+
+		.loading span:nth-child(3) {
+			left: 50px;
+			animation-delay: -0.8s;
+		}
+
+		@keyframes loading {
+			0% {
+				top: 3px;
+				height: 12px;
+			}
+			20% {
+				height: 8px;
+			}
+			40% {
+				top: 7px;
+				height: 6px;
+			}
+			60% {
+				top: 5px;
+				height: 10px;
+			}
+			80% {
+				height: 4px;
+			}
+			100% {
+				top: 7px;
+				height: 6px;
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			.generando {
+				font-size: 36px;
+				margin-bottom: 20px;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			.generando {
+				font-size: 24px;
+				margin-bottom: 10px;
+			}
+		}
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<script>
+		// Redirigir a otra web después de 5 segundos
+		setTimeout(function() {
+			window.location.href = "https://ouo.io/M52tPC";
+		}, 5000); // 5000 milisegundos = 5 segundos
+	</script>
+</head>
+<body>
+	<h1 class="generando">Generando</h1>
+	<div class="loading">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</body>
+</html>
