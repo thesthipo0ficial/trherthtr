@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Copy to Clipboard</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style>
+		body {
+			background-color: #000;
+			color: #fff;
+			font-family: Arial, sans-serif;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 30px;
+			height: 100%;
+		}
+		.row {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 10px;
+			flex-wrap: wrap;
+			width: 100%;
+			max-width: 350px;
+			position: relative;
+		}
+		.label-container {
+			width: 100%;
+			text-align: left;
+			margin-bottom: 5px;
+		}
+		.input-container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			width: 100%;
+		}
+		.input {
+			width: 100%;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			margin-right: 5px;
+			background-color: #333;
+			color: #fff;
+			font-size: 16px;
+			text-align: left;
+			box-sizing: border-box;
+		}
+		.icon {
+			background-color: #000;
+			color: #fff;
+			border: none;
+			border-radius: 50%;
+			padding: 10px;
+			margin-left: 5px;
+			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+		}
+		.icon:hover {
+			background-color: #000;
+		}
+		.navbar {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			background-color: #000;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 60px;
+			background-color: #000;
+		}
+
+		.navbar {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			background-color: #000;
+			color: white;
+	
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			padding: 10px 0;
+			font-size: 30px;
+			/* Agrega la siguiente propiedad: */
+			background-color: black;
+		}
+		
+		
+	
+
+		.navbar a {
+			color: white;
+			text-decoration: none;
+			margin: 0 20px;
+			font-size: 20px;
+		}
+		.title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		.button {
+			display: block;
+			margin-top: 20px;
+			background-color: #fff;
+			color: #000;
+			border: none;
+			border-radius: 5px;
+			padding: 10px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s ease-in-out;
+		}
+		.button:hover {
+			background-color: #eee;
+		}
+		
+.button-report {
+  background-color: black;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.button-report:hover {
+  background-color: black;
+
+
+.icon.warning:before {
+  content: "warning";
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="title">!Disfruta De Tu Cuenta! :)</div>
+		<div class="row">
+			<div class="input-container">
+				<input type="text" id="text1" class="input" value="hartwhid@gmail.com">
+				<button class="icon" onclick="copyText('text1')"><i class="material-icons">content_copy</i></button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-container">
+				<input type="text" id="text2" class="input" value="Tablesaw1">
+				<button class="icon" onclick="copyText('text2')"><i class="material-icons">content_copy</i></button>
+			</div>
+		</div>
+		<button class="button" onclick="redirectToWebsite()">Generar Otra</button>
+		 <button class="button button-report" onclick="reportAccount()"><i class="material-icons icon">warning</i>Reportar Cuenta Caida</button>
+		<div class="note">
+  <h3>Nota importante</h3>
+  <p>Recuerda No Cambiar Los Datos de Las Cuentas Ni Contraseña Ni Crear Perfiles .</p>
+</div>
+	</div>
+	</div>
+	<script>
+		function copyText(id) {
+			var element = document.getElementById(id);
+			element.select();
+			document.execCommand("copy");
+		}
+		/// Obtener los elementos donde se copió el texto
+var input1 = document.getElementById("text1");
+var input2 = document.getElementById("text2");
+
+
+function reportAccount() {
+  // Redirigir al usuario a la página de reporte
+  window.location.href = "https://t.me/plustechoficial_bot";
+}
+// Agregar un evento 'copy' a los elementos 
+input1.addEventListener("copy", function(event) {
+  // Mostrar la ventana de alerta
+  alert("Has copiado el Correo💌");
+});
+
+input2.addEventListener("copy", function(event) {
+  // Mostrar la ventana de alerta
+  alert("Has copiado La Contraseña🔑");
+});
+
+// Agregar un evento 'copy' al elemento
+elemento.addEventListener("copy", function(event) {
+  // Mostrar la ventana de alerta
+  alert("Has copiado el texto de este elemento.");
+});
+
+		function redirectToWebsite() {
+			window.location.href = "https://thesthipo0ficial.github.io/trherthtr/paramountplusgen2.html";
+		}
+	</script>
+</body>
+</html>
